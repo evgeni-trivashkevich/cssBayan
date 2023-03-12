@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.wrapper {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.faq {
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+.faq-item {
+    border: 0.5vh solid #808080;
+    text-align: center; 
+    margin-top: 1vh;
+    border-radius: 1vh;
+}
+
+.faq-title {
+    display: block;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.faq-title:hover {
+    background-color: rgba(249, 235, 127, 0.245);
+    transition: 1s;
+}
+
+.faq-input:hover {
+    transition: 3s;
+}
+
+.faq-input {
+    width: 0;
+    height: 0;
+
+    appearance: none;
+    position: absolute;
+    transition: 3s;
+}
+
+.pic {
+    display: none;
+    width: 50%;
+    height: 50%;
+    transition: 3s;
+}
+
+.faq-input:checked ~ .faq-title > .pic {
+        display: inline;
+        transition: 5s;
+}
+
+.faq-item:hover > .faq-title > .pic {
+    display: inline;
+    cursor: pointer;
+}
+
+
